@@ -48,7 +48,9 @@ class Student
  
     DB[:conn].execute(sql, hash[:id], hash[:name], hash[:grade]) 
   
-    
+  @name = hash[:name]
+  @grade = hash[:name]
+      
   end
   
 end
