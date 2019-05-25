@@ -48,10 +48,8 @@ class Student
  
     DB[:conn].execute(sql, hash[:id], hash[:name], hash[:grade]) 
   
-  @name = hash[:name]
-  @grade = hash[:grade]
-  @id = hash[:id]
-  self 
+  student = Student.new(hash[:id], hash[:name], hash[:grade])
+  student 
       
   end
   
