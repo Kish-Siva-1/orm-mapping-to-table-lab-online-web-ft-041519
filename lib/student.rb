@@ -50,6 +50,9 @@ class Student
   
   @name = hash[:name]
   @grade = hash[:grade]
+  @id = hash[:id]
+  
+  
       
   end
   
