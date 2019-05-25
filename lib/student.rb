@@ -49,8 +49,6 @@ class Student
     DB[:conn].execute(sql, hash[:id], hash[:name], hash[:grade]) 
   
   student = Student.new(hash[:id], hash[:name], hash[:grade])
-  student 
-      
   end
   
 end
