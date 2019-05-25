@@ -46,7 +46,7 @@ class Student
       VALUES (?, ?, ?)
     SQL
  
-    DB[:conn].execute(sql, hash[], self.name, self.grade) 
+    DB[:conn].execute(sql, hash[:id], self.name, self.grade) 
   end
   
 end
