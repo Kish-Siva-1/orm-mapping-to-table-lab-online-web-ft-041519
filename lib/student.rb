@@ -40,7 +40,7 @@ class Student
     DB[:conn].execute(sql, self.id, self.name, self.grade)
   end
   
-  def self.create
+  def self.create()
     sql =  <<-SQL 
       DROP TABLE IF EXISTS students
         SQL
