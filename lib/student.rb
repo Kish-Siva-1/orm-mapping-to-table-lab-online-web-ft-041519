@@ -41,10 +41,12 @@ class Student
   end
   
   def self.create(hash)
-    sql =  <<-SQL 
-      DROP TABLE IF EXISTS students
-        SQL
-    DB[:conn].execute(sql) 
+    sql = <<-SQL
+      INSERT INTO students (id, name, grade) 
+      VALUES (?, ?, ?)
+    SQL
+ 
+    DB[:conn].execute(sql, hash[], self.name, self.grade) 
   end
   
 end
